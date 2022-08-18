@@ -1,7 +1,7 @@
-name: "Placental-cells-methyl-vs-transcriptome"
+name: Placental-cells-methyl-vs-transcriptome
 output_dir: ../docs
 navbar:
-  title: "Placental-cells-methyl-vs-transcriptome"
+  title: Placental-cells-methyl-vs-transcriptome
   left:
   - text: Home
     href: index.html
@@ -9,6 +9,10 @@ navbar:
     href: about.html
   - text: License
     href: license.html
+  right:
+  - icon: fab fa-github
+    text: Source code
+    href: https://github.com/wvictor14/Placental-cells-methyl-vs-transcriptome
 output:
   workflowr::wflow_html:
     toc: yes
