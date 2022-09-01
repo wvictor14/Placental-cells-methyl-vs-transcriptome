@@ -1,0 +1,30 @@
+---
+title: "01_data"
+output: html_document
+date: "2022-09-01"
+---
+
+Two sources for scRNAseq data:
+
+Shannon 2022: https://pubmed.ncbi.nlm.nih.gov/35020896/
+Vento-tormo 2018
+
+I have the vento-tormo data already downloaded and processed from other projects.
+
+In this script, I download Shannon 2022 data from GEO and save as a seurat / matrix for downstream analyses.
+
+# download from GEO
+
+The series matrix file from GEO is incomplete. Instead I download the matrix/features/barcodes data from _RAW.tar 
+
+```{r}
+library(Seurat)
+library(here)
+```
+
+```{r}
+GSM5315569_P277 <- Read10X(data.dir = here::here('data', 'GSE174481_RAW', 'GSM5315569_P277'))
+GSM5315569_P277
+```
+
+
